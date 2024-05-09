@@ -1,0 +1,16 @@
+{
+  "name": "Bible Quotes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "electron .",
+    "build": "electron-packager . Bible_Quotes --asar --icon=bible.ico --overwrite"
+  },
+  "author": "Oluegwu Chigozie",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^25.1.1",
+    "electron-packager": "^17.1.1"
+  }
+}

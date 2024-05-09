@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+@font-face {
+  font-family: "Pacifico";
+  src: url(../fonts/Pacifico/Pacifico-Regular.ttf),
+    url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+
+body {
+  background-color: rgba(135, 207, 235, 0);
+  font-family: " Roboto", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  user-select: none;
+  overflow: hidden;
+  -webkit-app-region: drag;
+}
+
+.container {
+  cursor: default;
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+}
+
+.toolbar {
+  font-size: 14px;
+  width: 100%;
+  padding-bottom: 5px;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+.output {
+  -webkit-app-region: drag;
+}
+
+.quote {
+  font-size: 1rem;
+  word-spacing: 2px;
+  line-height: 1.5;
+  padding-bottom: 5px;
+  -webkit-app-region: no-drag;
+}
+
+.verse {
+  font-size: 1rem;
+  font-style: italic;
+  padding-left: 10px;
+}
