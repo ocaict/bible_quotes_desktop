@@ -1,4 +1,4 @@
-**# Random Bible Quotes**
+**# Bible Quote Desktop**
 
 This desktop application allows you to explore the wisdom and inspiration of the Bible through a user-friendly interface. Built with Electron.js, it provides a seamless experience across different operating systems. The UI is crafted using familiar web technologies: HTML, CSS, and JavaScript.
 
