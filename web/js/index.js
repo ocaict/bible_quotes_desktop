@@ -4,10 +4,10 @@ const { ipcRenderer } = require("electron");
 
 const output = document.querySelector(".output");
 // Global Variable
-let kjvUrl = { url: "../web/english-kjv.txt", lan: "KJV" };
-let nkjvUrl = { url: "../web/english-nkjv.txt", lan: "NKJV" };
-let frenchUrl = { url: "../web/french.txt", lan: "French" };
-let russianUrl = { url: "../web/russian.txt", lan: "Russian" };
+let kjvUrl = { url: "../web/bible/english-kjv.txt", lan: "KJV" };
+let nkjvUrl = { url: "../web/bible/english-nkjv.txt", lan: "NKJV" };
+let frenchUrl = { url: "../web/bible/french.txt", lan: "French" };
+let russianUrl = { url: "../web/bible/russian.txt", lan: "Russian" };
 
 let selectedUrl = JSON.parse(localStorage.getItem("bible")) || kjvUrl;
 let timer = +localStorage.getItem("timer") * 1000 || 5 * 1000;
@@ -24,7 +24,7 @@ const displayVerse = (verse, lan) => {
   <span class="verse">${verse[1]}${lan ? "(" + lan + ")" : ""}</span>
 </p>`;
 };
-// Get Qoute Function
+// Get Quote Function
 const getQoutes = async (url, lan = "") => {
   timer = +localStorage.getItem("timer") * 1000 || 5 * 1000;
   try {
